@@ -5,10 +5,10 @@ let gameOver = false;
 const gravity = 0.6;
 
 const p1Image = new Image();
-p1Image.src = 'p1.png'; 
+p1Image.src = '/p1.png'; 
 
 const p2Image = new Image();
-p2Image.src = 'p2.png'; 
+p2Image.src = '/p2.png'; 
 
 // Fighter Class with Robust Image Rendering
 class Fighter {
