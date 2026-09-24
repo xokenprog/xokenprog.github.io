@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Web - Home</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+body {
+  background-image: url('img/jotaro.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="Main.html" class="active">HOME</a>
+        <a href="Personalinfo.html">INFO</a>
+        <a href="Tools.html">TOOLS</a>
+    </nav>
+
+    <div class="hero" id="heroSection">
+        <p>DSPD 1703 / DDWD 2703 Web Programming Project</p>
+    
+    <button onclick="startGame()" class="btn btn-large">PRESS START</button>
+        
+        
+        <div class="cta-buttons">
+            <a href="Personalinfo.html" class="btn btn-alt">PLAYER INFO</a>
+            <a href="Tools.html" class="btn btn-alt">MINI TOOLS</a>
+        </div>
+    </div>
+
+    <!-- Arcade Fighter Canvas -->
+    <div id="gameContainer" class="game-container" style="display: none;">
+        <div class="game-header">
+            <div class="health-bar-container">
+                <div id="p1Health" class="health-fill p1-fill"></div>
+            </div>
+            <span id="gameTimer">10</span>
+            <div class="health-bar-container">
+                <div id="p2Health" class="health-fill p2-fill"></div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="300" height="200"></canvas>
+
+        <div class="game-controls-info">
+            <p><strong>P1 (Teal):</strong> A/D = Move | W = Jump | SPACE = Attack</p>
+            <p><strong>P2 (Red):</strong> ARROWS = Move/Jump | ENTER = Attack</p>
+            <button onclick="stopGame()" class="btn-sm" style="margin-top: 10px;">EXIT GAME</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

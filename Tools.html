@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="Main.html">HOME</a>
+        <a href="Personalinfo.html">INFO</a>
+        <a href="Tools.html" class="active">TOOLS</a>
+    </nav>
+
+    <div class="container">
+        <h2>INTERACTIVE TOOLS</h2>
+
+        <!-- i. Simple Calculator -->
+        <div class="tool-card">
+            <h3>1. Simple Calculator</h3>
+            <input type="number" id="calcNum1" placeholder="Number 1">
+            <input type="number" id="calcNum2" placeholder="Number 2"><br>
+            <button onclick="calculate('+')">Add (+)</button>
+            <button onclick="calculate('-')">Subtract (-)</button>
+            <button onclick="calculate('*')">Multiply (×)</button>
+            <button onclick="calculate('/')">Divide (÷)</button>
+            <p id="calcResult" class="result">Result: -</p>
+        </div>
+
+        <!-- ii. BMI Checker -->
+        <div class="tool-card">
+            <h3>2. BMI Checker</h3>
+            <input type="number" id="bmiWeight" placeholder="Weight (kg)">
+            <input type="number" id="bmiHeight" placeholder="Height (cm)"><br>
+            <button onclick="checkBMI()">Calculate BMI</button>
+            <p id="bmiResult" class="result">Result: -</p>
+        </div>
+
+        <!-- iii. Zakat / Income Tax Calculator -->
+        <div class="tool-card">
+            <h3>3. Zakat / Income Tax Calculator</h3>
+            <input type="number" id="annualIncome" placeholder="Annual Income (MYR)"><br>
+            <button onclick="calcZakatTax()">Calculate</button>
+            <p id="zakatTaxResult" class="result">Result: -</p>
+        </div>
+
+        <!-- iv. Unit Converter (1 Text Box, 4 Buttons, 1 <p> tag as specified) -->
+        <div class="tool-card">
+            <h3>4. Unit Converter</h3>
+            <input type="number" id="unitInput" placeholder="Enter value"><br>
+            <button onclick="convertUnit('cmToM')">cm to Metre</button>
+            <button onclick="convertUnit('mToCm')">Metre to cm</button>
+            <button onclick="convertUnit('mToKm')">Metre to km</button>
+            <button onclick="convertUnit('kmToM')">km to Metre</button>
+            <p id="unitResult" class="result">Result: -</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
