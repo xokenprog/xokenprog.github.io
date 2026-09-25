@@ -1,4 +1,3 @@
-// i. Calculator Functionality
 function calculate(op) {
     const num1 = parseFloat(document.getElementById('calcNum1').value);
     const num2 = parseFloat(document.getElementById('calcNum2').value);
@@ -18,7 +17,6 @@ function calculate(op) {
     document.getElementById('calcResult').innerText = "Result: " + res;
 }
 
-// ii. BMI Checker
 function checkBMI() {
     const weight = parseFloat(document.getElementById('bmiWeight').value);
     const heightCm = parseFloat(document.getElementById('bmiHeight').value);
@@ -40,7 +38,6 @@ function checkBMI() {
     document.getElementById('bmiResult').innerText = `Result: BMI is ${bmi} (${status})`;
 }
 
-// iii. Zakat / Tax Calculator (2.5% Zakat)
 function calcZakatTax() {
     const income = parseFloat(document.getElementById('annualIncome').value);
     if (isNaN(income) || income < 0) {
@@ -52,7 +49,6 @@ function calcZakatTax() {
     document.getElementById('zakatTaxResult').innerText = `Result: Zakat Payable (2.5%) = RM ${zakat}`;
 }
 
-// iv. Unit Converter (Strictly 1 input box, 4 conversion buttons)
 function convertUnit(type) {
     const val = parseFloat(document.getElementById('unitInput').value);
     if (isNaN(val)) {
